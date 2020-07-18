@@ -1,5 +1,3 @@
-nltk
-re
 word_tokenize
 stopwords
 wordnet
