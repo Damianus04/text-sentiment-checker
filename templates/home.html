@@ -2,11 +2,11 @@
 block page_content%}
 <script src="{{url_for('static', filename='script.js')}}"></script>
 
-<div class="page-header">
+<div class="page-header text-center">
   <h1>Check Sentiment</h1>
 </div>
 
-<div class="container">
+<div class="container text-center">
   <form action="{{ url_for('sentiment')}}" method="POST">
     <div class="form-group">
       <label for="exampleFormControlTextarea1">Enter Text Here</label>
