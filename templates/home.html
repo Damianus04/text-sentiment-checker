@@ -10,12 +10,7 @@ block page_content%}
   <form action="{{ url_for('sentiment')}}" method="POST">
     <div class="form-group">
       <label for="exampleFormControlTextarea1">Enter Text Here</label>
-      <textarea
-        name="utterance"
-        class="form-control"
-        id="text"
-        rows="3"
-      ></textarea>
+      <textarea name="text" class="form-control" id="text" rows="3"></textarea>
       <input
         type="submit"
         class="btn btn-primary input-keyword"

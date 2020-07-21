@@ -27,7 +27,7 @@ def home():
 @app.route('/sentiment', methods=['POST'])
 def sentiment():
     # return render_template('sentiment.html')
-    text = request.form['utterance']
+    text = request.form['text']
     data = [text]
 
     pred = model.predict(data)
