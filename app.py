@@ -1,6 +1,5 @@
 from flask import Flask, render_template, url_for, request
 from flask_bootstrap import Bootstrap
-from flask_sqlalchemy import SQLAlchemy
 from flask_moment import Moment
 from datetime import datetime
 from flask_wtf import FlaskForm
@@ -16,7 +15,6 @@ from jcopml.utils import load_model
 app = Flask(__name__)
 model = load_model("model/indonesian_general_election_sgd_tfidf.pkl")
 bootstrap = Bootstrap(app)
-db = SQLAlchemy(app)
 
 
 @app.route('/')
